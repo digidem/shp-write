@@ -1,5 +1,10 @@
 # shp-write
 
+## Changelog
+
+* Adds some maintenance fixes as mapbox seems to not be maintaining this module
+* Adds `zipStream` function
+
 [![Build Status](https://secure.travis-ci.org/mapbox/shp-write.svg?branch=master)](http://travis-ci.org/mapbox/shp-write)
 
 Writes shapefile in pure javascript. Uses [dbf](https://github.com/tmcw/dbf)
@@ -96,6 +101,10 @@ arrays, generate a shapfile and call the callback with `err` and an object with
 
 Generate a ArrayBuffer of a zipped shapefile, dbf, and prj, from a GeoJSON
 object.
+
+### `zipStream(geojson)`
+
+Like `zip`, but returns a node stream.
 
 ## Other Implementations
 
